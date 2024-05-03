@@ -1,0 +1,58 @@
+/* CSS untuk membuat halaman HTML lebih responsif dengan flexbox */
+
+/* Aturan untuk body */
+body {
+    font-family: Arial, sans-serif; /* Mengatur jenis font untuk teks dalam body */
+    margin: 0; /* Menghilangkan margin di sekitar body */
+    padding: 0; /* Menghilangkan padding di sekitar body */
+    background-color: #f4f4f4; /* Mengatur warna latar belakang body */
+}
+
+/* Aturan untuk header */
+header {
+    background-color: #333; /* Mengatur warna latar belakang header */
+    color: #fff; /* Mengatur warna teks header */
+    padding: 10px 0; /* Mengatur padding atas dan bawah header */
+    text-align: center; /* Membuat teks di header menjadi rata tengah */
+}
+
+/* Aturan untuk container */
+.container {
+    max-width: 800px; /* Mengatur lebar maksimum container */
+    margin: 20px auto; /* Mengatur margin atas dan bawah menjadi 20px, dan margin kiri dan kanan menjadi auto untuk posisi tengah */
+    padding: 0 20px; /* Mengatur padding kiri dan kanan container */
+    display: flex; /* Menggunakan display flex untuk menata anak-anaknya */
+    flex-wrap: wrap; /* Mengatur flex-wrap agar item-item di dalam container bisa turun baris jika tidak cukup lebar */
+    justify-content: space-around; /* Membuat item-item di dalam container terdistribusi secara merata */
+}
+
+/* Aturan untuk kamera */
+.camera {
+    margin-bottom: 20px; /* Menambahkan margin bawah pada setiap elemen kamera */
+    padding: 20px; /* Memberikan padding pada setiap elemen kamera */
+    background-color: #fff; /* Mengatur warna latar belakang elemen kamera */
+    border-radius: 5px; /* Memberikan sudut bulat pada elemen kamera */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Memberikan efek bayangan pada elemen kamera */
+    flex: 0 1 calc(33.33% - 40px); /* Mengatur ukuran elemen kamera sehingga ada 3 kolom dengan jarak antar elemen */
+    max-width: calc(33.33% - 40px); /* Mengatur lebar maksimum elemen kamera */
+    box-sizing: border-box; /* Mengatur model kotak elemen kamera */
+}
+
+/* Aturan untuk gambar kamera */
+.camera img {
+    max-width: 100%; /* Mengatur lebar gambar agar selalu 100% dari lebar elemen kamera */
+    height: auto; /* Mengatur tinggi gambar agar proporsional terhadap lebarnya */
+    display: block; /* Mengubah gambar menjadi blok agar bisa diatur margin */
+    margin: 0 auto 10px; /* Mengatur margin atas dan bawah 10px, dan margin kiri dan kanan menjadi auto untuk posisi tengah */
+    border-radius: 5px; /* Memberikan sudut bulat pada gambar */
+}
+
+/* Aturan untuk judul kamera */
+.camera h2 {
+    text-align: center; /* Membuat judul di tengah */
+}
+
+/* Aturan untuk deskripsi kamera */
+.camera p {
+    text-align: justify; /* Membuat deskripsi menjadi rata kiri-kanan */
+}
